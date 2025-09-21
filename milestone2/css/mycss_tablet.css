@@ -1,1 +1,17 @@
+/* Only color/background overrides for smaller screens */
+body {
+    background-color: #111;
+    color: #eee;
+}
+
+h1 {
+    background-color: #005f73;
+    color: #ffdd00;
+}
+
+img { border-color: #ffdd00; }
+
+table { background-color: #222; }
+
+form { background-color: #222; }
 
