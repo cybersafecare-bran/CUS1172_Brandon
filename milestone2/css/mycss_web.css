@@ -1,1 +1,79 @@
+/* Tag selectors (requirement 6) */
+body {
+    background-color: #222;
+    color: #f0f0f0;
+}
+
+/* headings */
+h1 {
+    color: gold;
+    background-color: #333;
+    border-radius: 6px;
+    border: 2px solid gold;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.6);  /* extra CSS feature */
+}
+
+h2 { color: teal; }
+
+h3 { color: orange; }
+
+/* paragraphs */
+p { color: #ddd; }
+
+/* links */
+a {
+    color: lightblue;
+    text-decoration: line-through;
+}
+a:hover { text-decoration: underline; }
+
+/* class selector */
+.intro { font-style: italic; color: lightgreen; }
+
+/* id selector */
+#main-heading { border-style: solid; }
+
+/* span */
+span.highlight {
+    background-color: purple;
+    color: rgb(190, 110, 161);
+    border-radius: 4px;
+}
+
+/* div */
+div {
+    background-color: #333;
+    border-radius: 6px;
+}
+
+/* lists */
+ul, ol { background-color: #333; }
+li { color: #f0f0f0; }
+
+/* images */
+img {
+    border: 2px solid gold;
+    border-radius: 8px;
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+    background-color: #444;
+}
+th, td {
+    border: 1px solid #666;
+    color: #f9f9f9;
+}
+
+/* form */
+form { background-color: #333; }
+
+/* Print rules (requirement 9 is satisfied here) */
+@media print {
+    body { background: #ddd; color: black; }
+    a { text-decoration: underline; color: black; }
+    img, video, iframe { display: none; }
+    form { background: none; border: none; }
+}
 
