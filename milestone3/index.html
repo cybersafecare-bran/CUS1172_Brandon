@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CUS1172 - Bootstrap Milestone</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <!-- CSS from Milestone 2 -->
+    <link rel="stylesheet" href="milestone2/css/mycss_web.css" media="screen">
+    <link rel="stylesheet" href="milestone2/css/mycss_tablet.css" media="screen and (max-width: 768px)">
+    
+    <!-- Internal style block (from milestone 2) -->
+    <style>
+        h2 { color: teal; text-align: center; }
+        
+        .jumbotron {
+            background-color: #333;
+            color: #f0f0f0;
+        }
+        
+        .card {
+            background-color: #444;
+            border-color: #666;
+        }
+        
+        .card-body {
+            color: #f0f0f0;
+        }
+        
+        .alert-info {
+            background-color: #005f73;
+            border-color: #0a9396;
+            color: #ffdd00;
+        }
+        
+        .badge-primary {
+            background-color: purple;
+        }
+        
+        .progress-bar {
+            background-color: gold;
+        }
+    </style>
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Bootstrap 1: Jumbotron -->
+    <div class="jumbotron text-center">
+        <h1 id="main-heading" class="display-4">CUS1172 - Bootstrap Milestone</h1>
+        <p class="intro lead">Welcome to <b>CUS 1172</b> - Now with Bootstrap!</p>
+    </div>
+
+    <div class="container">
+        <!-- Bootstrap 2: Alert -->
+        <div class="alert alert-info" role="alert">
+            <strong>Info:</strong> This page demonstrates Bootstrap integration with existing CSS styling.
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h2>CUS1172 - h2</h2>
+                <p>This is a paragraph with a <a href="https://www.google.com">link to Google</a>.</p>
+                
+                <h3 style="color: red;">CUS1172 - h3 (inline styled)</h3>
+                
+                <!-- Bootstrap 3: Card for Image -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Image Example</h5>
+                        <p class="card-text">Here's an image displayed in a Bootstrap card:</p>
+                        <img src="https://www.shorturl.at/img/shorturl-icon.png" alt="Placeholder image" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h4>Video Examples</h4>
+                    <p>Here's a video:</p>
+                    <div class="embed-responsive embed-responsive-16by9 mb-3">
+                        <video class="embed-responsive-item" controls>
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <p>Here's a YouTube video:</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IAYhEkVtNuQ" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4>Unordered List</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">Buy milk</li>
+                            <li class="list-group-item">Drive home</li>
+                            <li class="list-group-item">Teach class</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4>Ordered List</h4>
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item">Buy milk</li>
+                            <li class="list-group-item">Drive home</li>
+                            <li class="list-group-item">Teach class</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Bootstrap 4: Progress Bar -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Course Progress</h5>
+                        <div class="progress mb-2">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                        <small class="text-muted">Milestone 3 of 4 completed</small>
+                    </div>
+                </div>
+
+                <!-- Bootstrap 5: Badges -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Course Tags</h5>
+                        <span class="badge badge-primary mr-1">HTML</span>
+                        <span class="badge badge-secondary mr-1">CSS</span>
+                        <span class="badge badge-success mr-1">Bootstrap</span>
+                        <span class="badge badge-info">Web Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <h4>Class Schedule</h4>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Class</th>
+                                <th>Day</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CUS1165</td>
+                                <td>Thursday</td>
+                                <td>12 PM</td>
+                            </tr>
+                            <tr>
+                                <td>CUS1172</td>
+                                <td>Thursday</td>
+                                <td>3:30 PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h4>Contact Form</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <p><span class="highlight">End of index page for Milestone 3 - Bootstrap Version</span></p>
+                <hr>
+                <p>Finished with the help of class lectures, w3schools, and Bootstrap module!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
