@@ -1,0 +1,50 @@
+body {
+    background-color: #222;
+    color: #f0f0f0;
+}
+
+h1 {
+    color: gold;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 6px;
+    border: 2px solid gold;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+ul {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+li {
+    background-color: #444;
+    color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+button {
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+#task-form {
+    border: 2px solid gold;
+}
+
+#task-list {
+    list-style-type: none;
+}
+
+.completed {
+    text-decoration: line-through;
+}
